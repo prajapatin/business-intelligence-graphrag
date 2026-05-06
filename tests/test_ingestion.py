@@ -23,7 +23,7 @@ def sample_tables():
          "industry": "Technology", "region": "North America", "tier": "Enterprise", "since": "2022-06-01"},
     ])
     transactions = pd.DataFrame([
-        {"id": "TX-0001", "date": "2023-06-15", "product_id": "PROD-001", "customer_id": "CUST-001",
+        {"id": "TX-0001", "date": "2024-06-15", "product_id": "PROD-001", "customer_id": "CUST-001",
          "employee_id": "EMP-001", "quantity": 5, "unit_price": 299.99, "discount": 0.1,
          "total_amount": 1349.96, "region": "North America", "status": "Completed"},
     ])

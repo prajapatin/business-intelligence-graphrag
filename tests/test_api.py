@@ -77,7 +77,7 @@ def test_insights_endpoint(client):
     with patch("src.api.routes._get_trend_detector") as mock_td:
         mock_detector = MagicMock()
         mock_detector.get_all_insights.return_value = {
-            "quarterly_revenue": [{"quarter": "Q1-2023", "revenue": 50000}],
+            "quarterly_revenue": [{"quarter": "Q1-2024", "revenue": 50000}],
             "top_products": [],
             "top_customers": [],
             "department_performance": [],

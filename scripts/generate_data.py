@@ -86,8 +86,8 @@ def generate_customers(n=80):
 
 def generate_sales_transactions(employees, customers, n=500):
     transactions = []
-    start_date = datetime(2023, 1, 1)
-    end_date = datetime(2024, 12, 31)
+    start_date = datetime(2024, 1, 1)
+    end_date = datetime(2025, 12, 31)
 
     sales_reps = [e for e in employees if e["role"] in ("Sales Rep", "Manager", "Department Head")]
     if not sales_reps:
@@ -177,7 +177,7 @@ def generate_business_reports(employees, customers, transactions):
     report_count = 0
 
     # --- Quarterly Performance Reports (8 docs) ---
-    for year in [2023, 2024]:
+    for year in [2024, 2025]:
         for q in range(1, 5):
             q_start_month = (q - 1) * 3 + 1
             q_end_month = q * 3
@@ -449,7 +449,7 @@ def generate_business_reports(employees, customers, transactions):
         report_count += 1
 
     # --- Annual Review (2 docs) ---
-    for year in [2023, 2024]:
+    for year in [2024, 2025]:
         yr_tx = tx_df[(tx_df["date"].str.startswith(str(year))) & (tx_df["status"] == "Completed")]
         yr_rev = yr_tx["total_amount"].sum()
         yr_count = len(yr_tx)

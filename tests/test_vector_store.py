@@ -122,12 +122,12 @@ def test_document_chunker_splits_text():
 
 
 def test_document_chunker_infer_type():
-    assert DocumentChunker._infer_doc_type("quarterly_report_q1_2023.txt") == "quarterly_report"
+    assert DocumentChunker._infer_doc_type("quarterly_report_q1_2024.txt") == "quarterly_report"
     assert DocumentChunker._infer_doc_type("dept_memo_engineering.txt") == "department_memo"
     assert DocumentChunker._infer_doc_type("product_brief_prod-001.txt") == "product_brief"
     assert DocumentChunker._infer_doc_type("regional_summary_north_america.txt") == "regional_summary"
     assert DocumentChunker._infer_doc_type("case_study_cust-001.txt") == "customer_case_study"
-    assert DocumentChunker._infer_doc_type("annual_review_2023.txt") == "annual_review"
+    assert DocumentChunker._infer_doc_type("annual_review_2024.txt") == "annual_review"
     assert DocumentChunker._infer_doc_type("random_file.txt") == "unknown"
 
 

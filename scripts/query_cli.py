@@ -17,7 +17,7 @@ from src.generation.answer_generator import AnswerGenerator
 EXAMPLE_QUERIES = [
     "What are the top-selling products by revenue?",
     "Which department generates the most sales revenue?",
-    "Show me the quarterly revenue trend for 2023 and 2024",
+    "Show me the quarterly revenue trend for 2024 and 2025",
     "Which customers spend the most? What industries are they in?",
     "What is the relationship between the Engineering department and product sales?",
     "Which region has the highest sales concentration?",

@@ -150,7 +150,7 @@ cp .env.example .env
 python scripts/generate_data.py
 ```
 
-This creates 6 departments, 8 products, 60 employees, 80 customers, 500 sales transactions across 2023-2024 with seasonal trends, and **~36 business report text files** (quarterly reports, department memos, product briefs, regional summaries, customer case studies, annual reviews).
+This creates 6 departments, 8 products, 60 employees, 80 customers, 500 sales transactions across 2024-2025 with seasonal trends, and **~36 business report text files** (quarterly reports, department memos, product briefs, regional summaries, customer case studies, annual reviews).
 
 ### 4. Build the knowledge graph
 

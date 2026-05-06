@@ -20,7 +20,7 @@ const EXAMPLE_QUERIES = [
   "Summarize the Engineering department's performance from memos and graph data",
   "Which region has the strongest revenue and what growth trends are reported?",
   "What do customer case studies reveal about our highest-spending clients?",
-  "Show me quarterly revenue trends for 2023 vs 2024",
+  "Show me quarterly revenue trends for 2024 vs 2025",
   "What strategic recommendations appear in our annual reviews?",
   "Who are the top-performing sales representatives?",
   "What product insights can you find across briefs and sales data?",
