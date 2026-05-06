@@ -269,7 +269,7 @@ Question: "Which department generates the most sales?"
 
 | Mode | Graph | Vector | Use case |
 |------|-------|--------|----------|
-| `hybrid` (default) | ✅ | ✅ | Best quality — structured + semantic context |
+| `hybrid` (default) | ✅ | ✅ | Best quality (structured + semantic context)|
 | `graph_only` | ✅ | ❌ | Fast, relationship-focused answers |
 | `vector_only` | ❌ | ✅ | Narrative/report-focused answers |
 
