@@ -33,8 +33,8 @@ A production-style reference project that builds a knowledge graph and a vector 
 ```
 
 **Key insight:** This is a **Hybrid RAG** system combining two retrieval strategies:
-- **Graph retrieval** - Keyword-matched subgraph traversal over a knowledge graph of entities and relationships
-- **Vector retrieval** - Semantic similarity search over embedded business reports using ChromaDB + sentence-transformers
+- **Graph retrieval**: Keyword-matched subgraph traversal over a knowledge graph of entities and relationships
+- **Vector retrieval**: Semantic similarity search over embedded business reports using ChromaDB + sentence-transformers
 
 Both contexts are fused and fed to the LLM, yielding richer, more accurate answers than either method alone.
 
@@ -239,17 +239,17 @@ Returns pre-computed business insights (quarterly revenue, top products, departm
 
 ## How Hybrid RAG Works
 
-1. **Ingest** — CSV data is loaded and entities are extracted. Business reports are generated from the same data.
+1. **Ingest**: CSV data is loaded and entities are extracted. Business reports are generated from the same data.
 
-2. **Build** — Entities become graph nodes and edges. Report text files are chunked and embedded into ChromaDB.
+2. **Build**: Entities become graph nodes and edges. Report text files are chunked and embedded into ChromaDB.
 
-3. **Retrieve (Hybrid)** — On query:
+3. **Retrieve (Hybrid)**: On query:
    - **Graph path**: Keywords -> match nodes -> traverse subgraph -> structured context
    - **Vector path**: Query embedding -> top-K similar report chunks -> semantic context
 
-4. **Fuse** — Both contexts are merged: `[KNOWLEDGE GRAPH CONTEXT]` + `[DOCUMENT CONTEXT]`
+4. **Fuse**: Both contexts are merged: `[KNOWLEDGE GRAPH CONTEXT]` + `[DOCUMENT CONTEXT]`
 
-5. **Generate** — The LLM receives the fused context + your question and produces a grounded, data-driven answer.
+5. **Generate**: The LLM receives the fused context + your question and produces a grounded, data-driven answer.
 
 ```
 Question: "Which department generates the most sales?"
