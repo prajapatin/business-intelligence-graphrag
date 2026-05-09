@@ -7,10 +7,10 @@ name = "business-intelligence-graphrag"
 version = "1.0.0"
 description = "GraphRAG for Business Intelligence-Identify trends and relationships in corporate data"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10,<3.13"
 license = {text = "MIT"}
 authors = [
-    {name = "Nitin Prajapati"}
+    {name = "Nilesh Prajapati"}
 ]
 
 [tool.pytest.ini_options]

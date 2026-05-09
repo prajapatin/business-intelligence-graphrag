@@ -121,7 +121,7 @@ business-intelligence-graphrag/
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.10 to 3.12 (Python 3.13+ is not supported due to C API incompatibilities with some dependencies)
 - Node.js 18+ (for frontend)
 - An API key for one of: **Groq** (free tier available), **OpenAI**, or **Ollama** running locally
 
@@ -131,8 +131,8 @@ business-intelligence-graphrag/
 
 ```bash
 cd business-intelligence-graphrag
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv venv # Create virtual environment
+source venv/bin/activate # Activate virtual environment
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
